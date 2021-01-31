@@ -14,61 +14,68 @@
 
 <body>
     <div id="wrapper">
-    <nav id="navbar">
-        <div class="myicon"><i class="fas fa-bars"></i></div>
-        <ul class="sm-screen">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="gallery.html">Dance/Gallery</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div id="flex-box">
-        <section id="main">
+        <nav id="navbar">
+            <div class="myicon"><i class="fas fa-bars"></i></div>
+            <ul class="sm-screen">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Dance/Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="flex-box">
+            <section id="main">
 
-            <h1>Carmen Lorber</h1>
-            <h2>Schreib mir!</h2>
-            <form   action="https://formspree.io/f/mdopjkow"
-            method="POST">
-            <p>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                </p>
-            <p>
-				<label for="email">E-Mail</label>
-				<input type="email" name="_replyto" id="email">
-            </p>
-            <p>
-				<label for="message">Nachricht</label>
-				<textarea id="message" rows="4" cols="50"></textarea>
-            </p>
-            
-            <input type="submit" value="Senden"> 
-               
-            </form>
-        
-        </section>
+                <h1>Carmen Lorber</h1>
+                <h2>Schreib mir!</h2>
+                <form id="contactForm" method="POST">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="_replyto" id="email">
+                    </p>
+                    <p>
+                        <label for="message">Nachricht</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </p>
 
-        <section id="second">
-            <p>
-                <div class="style-box">
-                    <img class="contakt-img" src="fotos/contakt.jpg">
+                    <input type="submit" value="Senden">
+
+                </form>
+
+                <div id="successMessage" style="visibility:hidden;">
+                    <h2>Danke!</h2>
+                    <p>Ihre Nachricht wurde versendet!</p>
                 </div>
-            </p>
-        </section>
 
-        <aside>
-            <p>Danke, dass Sie meine Seite besucht haben!</p>
-        </aside>
-       </div>
+            </section>
+
+            <section id="second">
+                <p>
+                    <div class="style-box">
+                        <img class="contakt-img" src="fotos/contakt.jpg">
+                    </div>
+                </p>
+            </section>
+
+            <aside>
+                <p>Danke, dass Sie meine Seite besucht haben!</p>
+            </aside>
+        </div>
+
         <footer>
             <div>
                 <span>Copyright &copy; <script>
-                    document.write(new Date().getFullYear());
-                </script> &nbsp;&nbsp;&nbsp;
-                    <a href="https://www.facebook.com/carmen.lorber" target="_blank"><i class="fab fa-facebook-square"></i></a>&nbsp;
-                    <a href="https://instagram.com/caramella_laconya?igshid=1ncrchn62glvo" target="_blank"><i class="fab fa-instagram"></i></a>
+                        document.write(new Date().getFullYear());
+                    </script> &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/carmen.lorber" target="_blank"><i
+                            class="fab fa-facebook-square"></i></a>&nbsp;
+                    <a href="https://instagram.com/caramella_laconya?igshid=1ncrchn62glvo" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
                     <p>
                         <a href="impressum.html">Impressum</a> &nbsp;&nbsp;&nbsp;
                         <a href="datenschutz.html">Datenschutzerklärung</a>
@@ -81,6 +88,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
 </body>
 
 </html>

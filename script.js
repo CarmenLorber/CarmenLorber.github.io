@@ -23,6 +23,62 @@ $(document).ready(function(){
       })
   }
 
+  //Contact form
+
+  $(function() {
+    $('#contactForm').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: true,
+                minlength: 10
+            }
+        },
+        messages: {
+            name: {
+                required: "deine Name bitte!",
+                minlength: "die Name muss länger sein!"
+            },
+            email: {
+                required: "keine E-mail, keine Nachricht"
+            },
+            message: {
+                required: "bitte Text eingeben",
+                minlength: "der Text muss länger sein"
+            }
+        },
+        submitHandler: function(form) {
+            $(form).ajaxSubmit({
+                type:"POST",
+                dataType: "json",
+                url:"https://formspree.io/f/xbjpbldy",
+                success: function() {
+                    $('#contactForm :input').attr('disabled', 'disabled');
+                    $('#contactForm').fadeTo( "slow", 1, function() {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor','default');
+                        $('#successMessage').css('visibility','visible');
+                    })
+                },
+                error: function() {
+                    $('#contactForm').fadeTo( "slow", 1, function() {
+                        $('#error').fadeIn()
+                       
+                    })
+                }
+            })
+        }
+    })
+})
+   
+
     })
     
     var imgArray = [

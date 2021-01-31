@@ -48,7 +48,7 @@ $(document).ready(function(){
             },
             email: {
                 required: "keine E-mail, keine Nachricht",
-                email: "bitte gültige E-mail eingeben"
+                email: "bitte eine gultige E-mail eingeben"
             },
             message: {
                 required: "bitte Text eingeben",

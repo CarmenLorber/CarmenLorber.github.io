@@ -47,7 +47,8 @@ $(document).ready(function(){
                 minlength: "die Name muss länger sein!"
             },
             email: {
-                required: "keine E-mail, keine Nachricht"
+                required: "keine E-mail, keine Nachricht",
+                email: "bitte gültige E-mail eingeben"
             },
             message: {
                 required: "bitte Text eingeben",

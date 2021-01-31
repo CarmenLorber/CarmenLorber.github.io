@@ -69,7 +69,7 @@ $(document).ready(function(){
                 },
                 error: function() {
                     $('#contactForm').fadeTo( "slow", 1, function() {
-                        $('#error').fadeIn()
+                        $('#errorMessage').css('visibility','visible');
                        
                     })
                 }

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html {
+    font-size: 120%;
+}
+
+body {
+    background-color: black;
+    color: red;
+    margin: 0;
+}
+
+#wrapper {
+    background-image: url("fotos/background-main1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sm-screen {
+    display: none;
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(38, 53, 32);
+    border-radius: 0px 0px 10px 10px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+nav li {
+    display: block;
+    list-style-type: none;
+    padding: 0.2rem;
+}
+
+nav li a {
+    color: rgb(250, 193, 89);
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.1rem;
+    text-decoration: none;
+}
+
+#navbar li a:hover,
+#navbar li.active a {
+    background-color: rgb(250, 193, 89);
+    color: rgb(1, 39, 1);
+    border-radius: 0px 5px;
+}
+
+.myicon {
+    display: block;
+    text-align: right;
+    color: rgb(250, 193, 89);
+    font-size: 1.5em;
+    padding: 1rem;
+}
+#zitat span {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    color: rgb(250, 193, 89);
+}
+#main {
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+#main h1 {
+    font-size: 2.5rem;
+    color: red;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2 {
+    color: rgb(250, 193, 89);
+}
+h2.about {
+    font-size: 1.8rem;
+}
+p {
+    color: orangered;
+}
+#main p {
+    font-size: 1.2rem;
+}
+
+#second {
+    padding: 0 0.5rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.profil-img, .img-about, .img-aside, .book-img,
+.contakt-img, .img-gall {
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 3rem;
+    max-width: 16rem;
+}
+
+#slider {
+    border-radius: 0px 30px 0px 30px;
+    max-width: 16rem;
+    opacity: 1;
+    transition:  opacity 1s; 
+}
+
+#slider .fadeOut {
+    opacity: 0;
+}
+
+aside {
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: orangered;
+    font-size: 1rem;
+    padding: 5rem;
+}
+
+aside a {
+    text-decoration: none;
+    color: red;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+p.title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.8rem;
+    color: red;
+}
+
+#info h2 {
+    padding-top: 3rem;
+}
+
+form {
+    text-align: center;
+}
+form label {
+    display: block;
+}
+input {
+    display: block;
+    border: 1px solid black;
+    border-radius: 0.4em;
+    background-color: white;
+    width: 90%;
+    padding: .375rem .75rem;
+}
+
+#message {
+    border: 1px solid black;
+    border-radius: 0.4em;
+}
+
+input[type="submit"] {
+    margin: 0 auto;
+    width: 30%;
+    background-color: rgb(250, 193, 89);
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    color: rgb(250, 193, 89);
+    text-align: center;
+    border-radius: 10px;
+    background-color: #111111;
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(250, 193, 89);
+}
+
+footer a:hover {
+    color: red;
+}
+#data {
+    text-align: center;
+}
+
+#impress a {
+    text-decoration: none;
+    color: orangered;
+}
+
+#impress a:hover {
+    color: rgb(250, 193, 89);
+}
+
+@media screen and (min-width: 40em) {
+    html {
+        font-size: 100%;
+    }
+
+    .myicon {
+        display: none;
+    }
+
+    .sm-screen {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: block;
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    nav ul {
+        padding: 1rem;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 0.5rem;
+    }
+
+    nav li a {
+        padding: 0.5rem;
+        display: inline-block;
+    }
+
+    #main h1 {
+        padding-top: 6rem;
+        font-size: 2.8rem;
+    }
+    #main p {
+        font-size: 1.4rem;
+    }
+
+    aside {
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
+    }
+
+
+    #slider {
+        max-width: 18rem;
+    }
+    input {
+        margin: 0 auto;
+        width: 50%;
+    }
+    footer {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 65em) {
+    nav ul {
+        text-align: right;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li a {
+        padding: 1.2rem;
+    }
+
+    #flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto 0 auto;
+    }
+
+    #main {
+        flex-basis: 50%;
+    }
+   
+    #main h1 {
+        font-size: 3.2rem;
+    }
+
+    #second {
+        flex: 1;
+        padding-top: 7rem;
+    }
+    #info h2 {
+        font-size: 2rem;
+        padding-top: 8rem;
+    }
+    .main-foto-gall{
+        max-width: 18rem;  
+    }
+
+    .profil-img, .img-about,.img-aside, .book-img,
+    .contakt-img, .img-gall {
+        max-width: 18rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #slider {
+        max-width: 18rem;
+        padding-top: 0;
+    }
+    aside {
+        padding-top: 4rem;
+        width: 100%;
+    }
+    p.title {
+        font-size: 2rem;
+        color: red;
+    }
+}

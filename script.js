@@ -26,8 +26,8 @@ $(document).ready(function(){
     })
     
     var imgArray = [
-        'gallery/b1.jpg',
-        'gallery/b2.jpg' ];
+        'gallery/b1.JPG',
+        'gallery/b2.JPG' ];
         curIndex = 0;
         imgDuration = 4000;
     
